@@ -1,0 +1,11 @@
+Copyright © 2026 [YOUR NAME]. All rights reserved.
+
+This source code is made publicly available solely for inspection and evaluation as a Ludum Dare 60 Compo submission.
+
+Permission is granted to download, inspect, compile, and run an unmodified copy of the source code privately for the purpose of evaluating this Ludum Dare entry.
+
+No permission is granted to modify, redistribute, publish, sublicense, sell, incorporate the source code into another project, or create or distribute derivative works without prior written permission from the copyright holder.
+
+Third-party libraries, tools, fonts, and other components remain subject to their respective licenses.
+
+For licensing inquiries, contact: [YOUR CONTACT INFORMATION]

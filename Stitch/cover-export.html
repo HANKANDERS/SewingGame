@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stitch, Snip, Ship - Cover Export</title>
+<style>
+  html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #1d1630; }
+  body { display: grid; place-items: center; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script>
+  // fixed 640x512 at 1x, whatever the window is
+  Object.defineProperty(window, 'innerWidth', { get: () => 640 });
+  Object.defineProperty(window, 'innerHeight', { get: () => 512 });
+  Object.defineProperty(window, 'devicePixelRatio', { get: () => 1 });
+  // same scraps every time
+  Math.random = (() => {
+    let seed = 0x5e71c4;
+    return () => {
+      seed = (seed * 1664525 + 1013904223) >>> 0;
+      return seed / 4294967296;
+    };
+  })();
+</script>
+<script src="game.js"></script>
+<script src="cover-export.js"></script>
+</body>
+</html>
